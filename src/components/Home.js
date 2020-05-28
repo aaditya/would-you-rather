@@ -26,7 +26,7 @@ function Home(props) {
 function mapStateToProps({ questions, authUser, users }) {
     let currentUserAnswers = Object.keys(users[authUser].answers);
 
-    let quesArr = Object.values(questions);
+    let quesArr = Object.values(questions).sort((a, b) => b.timestamp - a.timestamp);
     let answered = quesArr.filter(q => currentUserAnswers.includes(q.id));
     let unanswered = quesArr.filter(q => !(currentUserAnswers.includes(q.id)));
 
