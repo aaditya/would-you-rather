@@ -9,7 +9,9 @@ It's built with React, Redux, React Router, & Redux Thunk.
 # Installation
 
 > git clone https://github.com/aadityachakravarty/would-you-rather
+
 > cd would-you-rather
+
 > npm install or yarn install
 
 # Usage
