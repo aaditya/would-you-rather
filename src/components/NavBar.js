@@ -16,13 +16,13 @@ class NavBar extends Component {
         return (
             <Nav className='navbar-expand-lg navbar-light bg-light'>
                 <Nav.Item>
-                    <Link className='nav-link' to='/'>Home</Link>
+                    <Link className='nav-link' to='/'><i className="fa fa-home" aria-hidden="true"></i> Home</Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Link className='nav-link' to='/add'>Add Question</Link>
+                    <Link className='nav-link' to='/add'><i className="fa fa-plus" aria-hidden="true"></i> Add Question</Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Link className='nav-link' to='/leaderboard'>Leaderboard</Link>
+                    <Link className='nav-link' to='/leaderboard'><i className="fa fa-chart-line" aria-hidden="true"></i> Leaderboard</Link>
                 </Nav.Item>
                 <NavDropdown title={currentUser.name} style={{ marginLeft: 'auto' }}>
                     <NavDropdown.Item onClick={this.logoutUser}>Logout</NavDropdown.Item>
