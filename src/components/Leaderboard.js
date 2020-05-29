@@ -6,7 +6,7 @@ function Leaderboard(props) {
     return (
         <div style={{ margin: 'auto' }}>
             <div className="card-group">
-                {props.scored.map(user => <BoardProfile user={user} />)}
+                {props.scored.map((user, index) => <BoardProfile key={index} user={user} />)}
             </div>
         </div>
     )
