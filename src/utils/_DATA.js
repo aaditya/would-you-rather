@@ -18,8 +18,9 @@ let users = {
       answers: {
         vthrdm985a262al8qx3do: "optionOne",
         xj352vofupe1dqz9emx13r: "optionTwo",
+        csbdhvbddsiuhusdfvfcnh: "optionOne"
       },
-      questions: ["loxhs1bqm25b708cmbf3g", "vthrdm985a262al8qx3do"],
+      questions: ["loxhs1bqm25b708cmbf3g", "vthrdm985a262al8qx3do", "csbdhvbddsiuhusdfvfcnh"],
     },
     johndoe: {
       id: "johndoe",
@@ -113,6 +114,19 @@ let users = {
         text: "write Swift",
       },
     },
+    csbdhvbddsiuhusdfvfcnh: {
+      id: "csbdhvbddsiuhusdfvfcnh",
+      author: "tylermcginnis",
+      timestamp: 1601867890000,
+      optionOne: {
+        votes: ["tylermcginnis"],
+        text: "Use React Native"
+      },
+      optionTwo: {
+        votes: [],
+        text: "Use Flutter"
+      }
+    }
   };
   
   function generateUID() {
